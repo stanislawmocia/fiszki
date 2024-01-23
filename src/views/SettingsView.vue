@@ -1,15 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <!-- TODO Tu będą całe ustawienia. czyli po lewej dodamy FleshcardList.vue po środku dwie Fleshcard.vue, nad listą chcemy mieć ImportExport.vue
+   -->
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<style></style>

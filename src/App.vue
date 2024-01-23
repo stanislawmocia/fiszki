@@ -1,20 +1,12 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <Navbar /> <!-- Tu już dodałem ten navbar z navigacją, tylko musicie go wypełnic w pliku Navbar.vue -->
 
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">App</RouterLink>
-        <RouterLink to="/about">Settings</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <RouterView /> <!-- To musi zostać bo odpowiada za wyswietlenie widoku -->
 </template>
 
 <style scoped></style>
