@@ -8,16 +8,20 @@ import router from './router'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
-const app = createApp(App)
+library.add(faMinus)
 
 const vuetify = createVuetify({
     components,
     directives,
 })
 
-app.use(createPinia())
-app.use(router)
-app.use(vuetify)
-
-app.mount('#app')
+createApp(App)
+    .use(createPinia())
+    .use(router)
+    .use(vuetify)
+    .component('font-awesome-icon', FontAwesomeIcon)
+    .mount('#app')
